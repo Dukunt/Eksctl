@@ -1,0 +1,19 @@
+apiVersion: v1 
+kind: Pod
+metadata:
+ name: multipod
+ namespace: Roboshop-ns
+ labels:
+  project: roboshop
+  environment: dev
+ annotations:
+  imageregistry: https://hub.docker.com
+spec:
+ containers:
+ - name: nginx-p 
+   image: nginx
+ - name: alma-p 
+   image: almalinux
+
+
+

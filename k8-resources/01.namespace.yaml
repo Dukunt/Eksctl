@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: service
+metadata:
+ name: roboshop-sv 
+spec:
+ selector:
+  project: Roboshop
+  environment: dev
+ ports:
+ - protocol: TCP
+   port: 80
+   targetPort: 80    
+   

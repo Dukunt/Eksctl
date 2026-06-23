@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: resource-demo
+ namespace: Roboshop-gen
+ labels:
+  project: rorboshop
+  environment: test
+spec:
+ containers:
+ - name: nginx-p 
+   image: nginx
+   resources:
+    requests:
+     memory: "64mi"
+     cpu: "100m"
+    limits:
+      memory: "128mi"
+      cpu: "150m"
+      
